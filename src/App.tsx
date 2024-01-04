@@ -9,7 +9,6 @@ import Penetration from './pages/Penetration'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
