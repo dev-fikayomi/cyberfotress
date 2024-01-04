@@ -1,14 +1,13 @@
-import React,{useState} from 'react'
+import {useState} from 'react'
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { IoCloseSharp } from "react-icons/io5";
-import { FaPlus } from "react-icons/fa";
+// import { FaPlus } from "react-icons/fa";
 import cyberfortress from "../assets/cyberfortress.jpg"
 import {useNavigate, NavLink} from "react-router-dom"
 import MobileService from './MobileService';
 
 export default function Header() {
     const [isNavbarOpen, setIsNavbarOpen] = useState(false)
-    const [isChildPropVisible, setIsChildPropVisible] = useState(false)
     const navigate = useNavigate()
 
     function handleClick(){
@@ -68,15 +67,11 @@ export default function Header() {
                 <ul className='mobile-list'>
                     <MobileService
                         service='About'
-                        isChildPropVisible={isChildPropVisible}
-                        setIsChildPropVisible={setIsChildPropVisible}
                     >
                         <></>
                     </MobileService>
                     <MobileService
                         service='Services'
-                        isChildPropVisible={isChildPropVisible}
-                        setIsChildPropVisible={setIsChildPropVisible}
                     >
                         <ul className='mobile-dropdown'>
                             <li onClick={()=> navigate("/security-infrastruture")}>
@@ -95,8 +90,6 @@ export default function Header() {
                     </MobileService>
                     <MobileService
                         service='Resources'
-                        isChildPropVisible={isChildPropVisible}
-                        setIsChildPropVisible={setIsChildPropVisible}
                     >
                     <></>
                     </MobileService>

@@ -1,4 +1,3 @@
-import React from 'react'
 import {useNavigate} from "react-router-dom"
 import logo from "../assets/cyberfortress.jpg"
 import { FaFacebookF, FaXTwitter,FaLinkedinIn, FaInstagram, FaYoutube} from "react-icons/fa6";

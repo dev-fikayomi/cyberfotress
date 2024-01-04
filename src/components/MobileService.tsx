@@ -3,12 +3,10 @@ import { FaPlus, FaMinus } from "react-icons/fa";
 
 interface Props {
   children: ReactNode;
-  service: string,
-  isChildPropVisible: boolean,
-  setIsChildPropVisible: React.Dispatch<React.SetStateAction<boolean>>
+  service: string
 }
 
-const MobileService: React.FC<Props> = ({ children, service, setIsChildPropVisible,isChildPropVisible }) => {
+const MobileService: React.FC<Props> = ({ children, service }) => {
   const [toggle, setToggle] = useState(false)
   function handleClick(){
     setToggle((prev)=>{
